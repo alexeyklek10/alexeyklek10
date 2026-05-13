@@ -1,8 +1,8 @@
-Independent researcher in statistical finance. Public work below — multi-asset correlation and volatility analysis, equity options risk analytics. Hand-rolled implementations validated against reference libraries; limitations stated alongside each method.
+Independent researcher in statistical finance. Public work below - multi-asset correlation and volatility analysis, equity options risk analytics. Hand-rolled implementations validated against reference libraries; limitations stated alongside each method.
 
 ## Projects
 
-### [Options Risk Dashboard](https://github.com/alexeyklek10/Options_Risk_Dashboard) — [live demo](https://optionsriskdashboard-habdkbmbe7f7gckmsqunii.streamlit.app/)
+### [Options Risk Dashboard](https://github.com/alexeyklek10/Options_Risk_Dashboard) - [live demo](https://optionsriskdashboard-habdkbmbe7f7gckmsqunii.streamlit.app/)
 
 Streamlit app and methodology notebook for multi-source options-chain analytics on US-listed equity options. Multi-provider aggregation (yfinance, optional Tradier and Polygon) with cross-source validation; hand-rolled Black-Scholes-Merton pricer and seven Greeks (delta, gamma, vega, theta, rho, vanna, charm); Manaster-Koehler initial guess plus Newton-Raphson on vega with Brent fallback for the IV solver. Eleven views including IV surface, 25-delta skew, max pain, gamma exposure under the SqueezeMetrics dealer-sign convention, Breeden-Litzenberger implied PDF, and a multi-leg strategy builder. Closed-form Greeks validated against `py_vollib` on a 1024-point Sobol grid.
 
